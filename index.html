@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Trying My Best to Get You on My Side</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffd6e0, #d4c1ec);
+      color: #333;
+      overflow-x: hidden;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      padding: 2rem 1rem;
+      color: #5d3a74;
+    }
+    .scroll-section {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .photo {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .photo.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .photo img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .caption {
+      margin-top: 1rem;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      color: #704264;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>I'm Trying My Best to Get You on My Side</h1>
+
+  <div class="scroll-section">
+
+    <div class="photo"><img src="photo1.jpeg" alt="Photo 1" />
+      <div class="caption">"I'am trying to enjoy "</div>
+    </div>
+
+    <div class="photo"><img src="photo2.jpeg" alt="Photo 2" />
+      <div class="caption">"I get confused even with my college dress."</div>
+    </div>
+
+    <div class="photo"><img src="photo3.jpeg" alt="Photo 3" />
+      <div class="caption">"I don’t have the right words, but I hope these pictures say enough."</div>
+    </div>
+
+    <div class="photo"><img src="photo4.jpeg" alt="Photo 4" />
+      <div class="caption">"I’m not perfect — but I’m real."</div>
+    </div>
+
+    <div class="photo"><img src="photo5.jpeg" alt="Photo 5" />
+      <div class="caption">"I always try to get better"</div>
+    </div>
+
+    <div class="photo"><img src="photo6.jpeg" alt="Photo 6" />
+      <div class="caption">"Trying, every day, to be someone you could love."</div>
+    </div>
+
+    <div class="photo"><img src="photo7.jpeg" alt="Photo 7" />
+      <div class="caption">"Will you meet me halfway?"</div>
+    </div>
+
+    <div class="photo"><img src="photo8.jpeg" alt="Photo 8" />
+        <div class="caption">"This is all i got"</div>
+      </div>
+      <div class="photo"><img src="photo9.jpeg" alt="Photo 9" />
+        <div class="caption">"I believe in gods so do you "</div>
+      </div>
+      <div class="photo"><img src="photo10.jpg" alt="Photo 10" />
+        <div class="caption">"This is how i look with long hair"</div>
+      </div>
+  </div>
+  
+
+  <script>
+    const photos = document.querySelectorAll('.photo');
+    window.addEventListener('scroll', () => {
+      photos.forEach(photo => {
+        const rect = photo.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          photo.classList.add('visible');
+        }
+      });
+    });
+  </script>
+    <div class="scroll-section">
+        <div class="caption" style="font-size: 1.8rem; margin-top: 4rem; color: #5a2a5a;">
+          Gyanvee, <br><br>
+          We’ve only talked for a few hours, but something about you stayed with me. You’re not just beautiful — you radiate peace, warmth, and a spark that I haven’t felt in a long time. <br><br>
+          In such a short span, I found myself imagining a version of life where you’re by my side — laughing, talking, just being. <br><br>
+          I don’t know what lies ahead, but I know this: you’ve already made a place in my heart, and I’ll try my best to be worthy of yours. 🌸<br><br>
+          — Utsav
+        </div>
+      </div>
+    
+</body>
+</html>
